@@ -28,16 +28,25 @@ nav{
     background-color: white;
     margin-top: 30px;
 }
-.dresses-row{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+.princess-container{
+    display: grid;  
+    grid-template-columns: 25% 25% 25% 25%;  
+    grid-template-rows: 200px 200px;
+    column-gap: 10px;
+    padding-top: 20px;
 }
-.dress{
-    width: 10%;
-    height: 150px;
+.princess-container img{
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;
+}
+.princess{
+    width: 50%;
+    height: 170px;
     background-color: violet;
     border-radius: 10px;
+    margin: 0 auto;
+    
 }
 .map-message{
     width: 100%;
@@ -76,20 +85,22 @@ footer{
     height: 150px;
     background-color: white;
 }
-/*area experimental*/
+/*EFECTO HOVER*/
 .poster-info{
     border-radius: 5px 5px 0 0;
     background-color: #fff;
     box-shadow: 5px 65px 20px -10px rgba(0,0,0,0.5);
-    position: absolute;
-    width: 270px;
+    position: relative;
+    bottom: 190px;
+    right: 9%;
+    width: 120%;
     height: 100px;
-    padding-top: 350px;
+    padding-top: 30px;
     padding-bottom: 20px;
     margin-bottom: 48px;
     transform: scale(0);
 } 
-.dress:hover .poster-info{
+.princess:hover .poster-info{
     transform: scale(1);
     transition: .3s;
 }
