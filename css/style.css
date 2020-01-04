@@ -76,3 +76,68 @@ footer{
     height: 150px;
     background-color: white;
 }
+/*area experimental*/
+.poster-info{
+    border-radius: 5px 5px 0 0;
+    background-color: #fff;
+    box-shadow: 5px 65px 20px -10px rgba(0,0,0,0.5);
+    position: absolute;
+    width: 270px;
+    height: 100px;
+    padding-top: 350px;
+    padding-bottom: 20px;
+    margin-bottom: 48px;
+    transform: scale(0);
+} 
+.dress:hover .poster-info{
+    transform: scale(1);
+    transition: .3s;
+}
+.poster-btn{
+    border: none;
+    border-radius: 0 0 5px 5px;
+    background: #2F2F2F;
+    height: 48px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: -48px;
+    width: 100%;
+    cursor: pointer;
+}
+.poster-btn:hover{
+    background: #484747;
+    transition: .3s;
+}
+.poster-title{
+    margin: 0;
+    margin-bottom: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+.poster-subtitle{
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #aaa;
+}
+.poster-price{
+    text-align: center;
+    margin: 0;
+    color: #2BCD71;
+    font-size: 16px;
+    font-weight: 500;
+}
+.poster-price-old{
+    text-decoration: line-through;
+    color: #aaa;
+    font-size: 14px;
+}
