@@ -8,16 +8,18 @@ body{
     height: auto;
     margin: 0 auto;
 }
+@media only screen and (max-width: 425px){
 .slider{
     width: 100%;
     height: 500px;
     background-color: pink;
     display: flex;
+    flex-direction: column;
 }
 .left-slider{
     width: 50%;
     height: 100%;
-    text-align: center;
+    margin: auto;
 }
 .left-slider img{
     width: 100%;  
@@ -25,9 +27,7 @@ body{
     object-fit: contain;
 }
 .right-slider{
-    width: 50%;
-    height: 100%;
-    border-left: 1px solid white;
+    margin: 20px 0;
 }
 .logo-text{
     width: 100%;
@@ -39,24 +39,19 @@ body{
     box-sizing: border-box;
     
 }
-.buttons{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
 .company-logo{
     width: 20%;
-    height: 40px;
+    height: 130px;
     background-color: white;
 }
 .company-text{
-    width: 60%;
-    height: auto;
-    margin-top: 40px;
+    margin: 20px 10px;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    margin: 10px 0;
 }
 .right-slider button{
     width: 40%;
@@ -73,11 +68,11 @@ body{
 }
 .princess-container{
     display: grid;  
-    grid-template-columns: 25% 25% 25% 25%;  
-    grid-template-rows: 200px 200px;
-    column-gap: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 155px 155px 155px 155px 155px;
+    column-gap: 0px;
+    padding-top: 51px;
+    padding-bottom: 51px;
     background-image: url(../img/fondo-vestidos.png);
 }
 .princess-container img{
@@ -87,8 +82,8 @@ body{
     border-radius: 15px;
 }
 .princess{
-    width: 50%;
-    height: 170px;
+    width: 75%;
+    height: 100px;
     background-color: violet;
     border-radius: 10px;
     margin: 0 auto;
@@ -135,7 +130,7 @@ footer{
     background-color: #fff;
     box-shadow: 5px 65px 20px -10px rgba(0,0,0,0.5);
     position: relative;
-    bottom: 190px;
+    bottom: 155px;
     right: 9%;
     width: 120%;
     height: 100px;
@@ -197,3 +192,204 @@ footer{
     font-size: 14px;
 }
 /*FIN DE EFECTO HOVER*/
+}
+@media only screen and (min-width: 426px){
+    .slider{
+        width: 100%;
+        height: 500px;
+        background-color: pink;
+        display: flex;
+    }
+    .left-slider{
+        width: 50%;
+        height: 100%;
+        text-align: center;
+    }
+    .left-slider img{
+        width: 100%;  
+        height: 100%;
+        object-fit: contain;
+    }
+    .right-slider{
+        width: 50%;
+        height: 100%;
+        border-left: 1px solid white;
+    }
+    .logo-text{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        
+    }
+    .buttons{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .company-logo{
+        width: 20%;
+        height: 40px;
+        background-color: white;
+    }
+    .company-text{
+        width: 60%;
+        height: auto;
+        margin-top: 40px;
+    }
+    .right-slider button{
+        width: 40%;
+        height: 50px;
+        background-color: white;
+        border: none;
+        border: 1px solid black;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .right-slider button:first-child{
+        margin-bottom: 40px;
+    }
+    .princess-container{
+        display: grid;  
+        grid-template-columns: 25% 25% 25% 25%;  
+        grid-template-rows: 200px 200px;
+        column-gap: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-image: url(../img/fondo-vestidos.png);
+    }
+    .princess-container img{
+        width: 100%;  
+        height: 100%;  
+        object-fit: cover;
+        border-radius: 15px;
+    }
+    .princess{
+        width: 50%;
+        height: 170px;
+        background-color: violet;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .map-message{
+        width: 100%;
+        height: 350px;
+        background-color: darkgrey;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .map{
+        width: 30%;
+        height: 250px;
+        background-color: darkkhaki;
+    }
+    .message{
+        width: 30%;
+        height: 250px;
+        background-color: darkkhaki;
+    }
+    footer{
+        width: 100%;
+        height: 200px;
+        background-color: plum;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .info{
+        width: 20%;
+        height: 150px;
+        background-color: white;
+    }
+    .social{
+        width: 20%;
+        height: 150px;
+        background-color: white;
+    }
+    /*EFECTO HOVER*/
+    .princess-info{
+        border-radius: 5px 5px 0 0;
+        background-color: #fff;
+        box-shadow: 5px 65px 20px -10px rgba(0,0,0,0.5);
+        position: relative;
+        bottom: 190px;
+        right: 9%;
+        width: 120%;
+        height: 100px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        margin-bottom: 48px;
+        transform: scale(0);
+        transition: .3s;
+    } 
+    .princess:hover .princess-info{
+        transform: scale(1);
+    }
+    .princess-btn{
+        border: none;
+        border-radius: 0 0 5px 5px;
+        background: #2F2F2F;
+        height: 48px;
+        font-family: inherit;
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: -48px;
+        width: 100%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .princess-btn:hover{
+        background: #484747;
+    }
+    .princess-title{
+        margin: 0;
+        margin-bottom: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+    }
+    .princess-subtitle{
+        margin: 0;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        color: #aaa;
+    }
+    .princess-price{
+        text-align: center;
+        margin: 0;
+        color: #2BCD71;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .princess-price-old{
+        text-decoration: line-through;
+        color: #aaa;
+        font-size: 14px;
+    }
+    /*FIN DE EFECTO HOVER*/
+    @media only screen and (max-width: 768px){
+        .princess {
+            width: 90%;
+            height: 150px;
+            background-color: violet;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+    }
+}
