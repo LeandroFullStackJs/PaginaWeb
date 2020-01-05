@@ -4,7 +4,7 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: darkcyan;
+    background-color: pink;
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -34,6 +34,8 @@ nav{
     grid-template-rows: 200px 200px;
     column-gap: 10px;
     padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(../img/fondo-vestidos.png);
 }
 .princess-container img{
     width: 100%;  
@@ -47,13 +49,11 @@ nav{
     background-color: violet;
     border-radius: 10px;
     margin: 0 auto;
-    
 }
 .map-message{
     width: 100%;
     height: 350px;
     background-color: darkgrey;
-    margin-top: 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -87,7 +87,7 @@ footer{
     background-color: white;
 }
 /*EFECTO HOVER*/
-.poster-info{
+.princess-info{
     border-radius: 5px 5px 0 0;
     background-color: #fff;
     box-shadow: 5px 65px 20px -10px rgba(0,0,0,0.5);
@@ -102,10 +102,10 @@ footer{
     transform: scale(0);
     transition: .3s;
 } 
-.princess:hover .poster-info{
+.princess:hover .princess-info{
     transform: scale(1);
 }
-.poster-btn{
+.princess-btn{
     border: none;
     border-radius: 0 0 5px 5px;
     background: #2F2F2F;
@@ -119,12 +119,12 @@ footer{
     bottom: -48px;
     width: 100%;
     cursor: pointer;
-}
-.poster-btn:hover{
-    background: #484747;
     transition: .3s;
 }
-.poster-title{
+.princess-btn:hover{
+    background: #484747;
+}
+.princess-title{
     margin: 0;
     margin-bottom: 5px;
     text-align: center;
@@ -133,7 +133,7 @@ footer{
     font-weight: 700;
     color: #000;
 }
-.poster-subtitle{
+.princess-subtitle{
     margin: 0;
     margin-bottom: 20px;
     text-align: center;
@@ -141,15 +141,16 @@ footer{
     font-weight: 500;
     color: #aaa;
 }
-.poster-price{
+.princess-price{
     text-align: center;
     margin: 0;
     color: #2BCD71;
     font-size: 16px;
     font-weight: 500;
 }
-.poster-price-old{
+.princess-price-old{
     text-decoration: line-through;
     color: #aaa;
     font-size: 14px;
 }
+/*FIN DE EFECTO HOVER*/
