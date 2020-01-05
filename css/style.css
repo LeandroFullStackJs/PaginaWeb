@@ -8,6 +8,43 @@ body{
     height: auto;
     margin: 0 auto;
 }
+/* Collapse INICIO */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+/* Collapse fin */
 @media only screen and (max-width: 425px){
     .slider{
         width: 100%;
@@ -22,7 +59,7 @@ body{
         margin: auto;
     }
     .left-slider img{
-        width: 100%;  
+        width: 100%;
         height: 100%;
         object-fit: contain;
     }
@@ -37,7 +74,7 @@ body{
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        
+
     }
     .company-logo{
         width: 20%;
@@ -67,7 +104,7 @@ body{
         margin-bottom: 40px;
     }
     .princess-container{
-        display: grid;  
+        display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 155px 155px 155px 155px 155px;
         column-gap: 0px;
@@ -76,8 +113,8 @@ body{
         background-image: url(../img/fondo-vestidos.png);
     }
     .princess-container img{
-        width: 100%;  
-        height: 100%;  
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-radius: 15px;
     }
@@ -139,7 +176,7 @@ body{
         margin-bottom: 48px;
         transform: scale(0);
         transition: .3s;
-    } 
+    }
     .princess:hover .princess-info{
         transform: scale(1);
     }
@@ -206,7 +243,7 @@ body{
         text-align: center;
     }
     .left-slider img{
-        width: 100%;  
+        width: 100%;
         height: 100%;
         object-fit: contain;
     }
@@ -223,7 +260,7 @@ body{
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
-        
+
     }
     .buttons{
         width: 100%;
@@ -258,8 +295,8 @@ body{
         margin-bottom: 40px;
     }
     .princess-container{
-        display: grid;  
-        grid-template-columns: 25% 25% 25% 25%;  
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 200px 200px;
         column-gap: 10px;
         padding-top: 20px;
@@ -267,8 +304,8 @@ body{
         background-image: url(../img/fondo-vestidos.png);
     }
     .princess-container img{
-        width: 100%;  
-        height: 100%;  
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-radius: 15px;
     }
@@ -330,7 +367,7 @@ body{
         margin-bottom: 48px;
         transform: scale(0);
         transition: .3s;
-    } 
+    }
     .princess:hover .princess-info{
         transform: scale(1);
     }
