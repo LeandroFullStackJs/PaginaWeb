@@ -102,15 +102,20 @@ body{
     .right-slider button{
         width: 40%;
         height: 50px;
-        background-color: white;
+        background-color: rgb(248, 147, 164);
         border: none;
         border: 1px solid black;
         border-radius: 10px;
         font-size: 15px;
         font-weight: bold;
+        transition: .3s;
+        color: white;
     }
     .right-slider button:first-child{
         margin-bottom: 40px;
+    }
+    .right-slider button:hover{
+        background-color: plum;
     }
     .princess-container{
         display: grid;
@@ -192,7 +197,7 @@ body{
     .princess-btn{
         border: none;
         border-radius: 0 0 5px 5px;
-        background: #2F2F2F;
+        background: rgb(248, 147, 164);
         height: 48px;
         font-family: inherit;
         font-size: 12px;
@@ -206,7 +211,7 @@ body{
         transition: .3s;
     }
     .princess-btn:hover{
-        background: #484747;
+        background: plum;
     }
     .princess-title{
         margin: 0;
@@ -293,15 +298,20 @@ body{
     .right-slider button{
         width: 40%;
         height: 50px;
-        background-color: white;
+        background-color: rgb(248, 147, 164);
         border: none;
         border: 1px solid black;
         border-radius: 10px;
         font-size: 15px;
         font-weight: bold;
+        transition: .3s;
+        color: white;
     }
     .right-slider button:first-child{
         margin-bottom: 40px;
+    }
+    .right-slider button:hover{
+        background-color: plum;
     }
     .princess-container{
         display: grid;
@@ -383,7 +393,7 @@ body{
     .princess-btn{
         border: none;
         border-radius: 0 0 5px 5px;
-        background: #2F2F2F;
+        background: rgb(248, 147, 164);
         height: 48px;
         font-family: inherit;
         font-size: 12px;
@@ -397,7 +407,7 @@ body{
         transition: .3s;
     }
     .princess-btn:hover{
-        background: #484747;
+        background: plum;
     }
     .princess-title{
         margin: 0;
@@ -492,4 +502,21 @@ body{
     border: none;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
+}
+/*ESTILO CARD*/
+.card{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eaeaea;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.card img{
+    width: 30%;
+    
 }
