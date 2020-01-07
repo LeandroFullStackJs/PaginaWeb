@@ -709,3 +709,46 @@ p {
 
     }
 }
+.data{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(60deg, lightpink 0%, hotpink 100%);
+    position: relative;
+    right: 50px;
+    margin-top: 20px;
+}
+.social img{
+    width: 10%;
+}
+.network{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.network img{
+    margin-right: 10%;
+}
+.instagram a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+.instagram a:hover{
+    color: tomato;
+}
+.instagram img{
+    margin-right: 10%;
+}
