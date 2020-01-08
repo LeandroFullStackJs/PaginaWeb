@@ -84,10 +84,9 @@ p {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 10px;
     transition: .3s;
-    font-family: 'Princess Sofia', cursive;
 }
 
 .active, .collapsible:hover {
@@ -324,7 +323,6 @@ p {
         font-size: 16px;
         font-weight: 700;
         color: #000;
-        font-family: 'Princess Sofia', cursive;
     }
     .princess-subtitle{
         margin: 0;
@@ -395,16 +393,16 @@ h2 {
   }
   
   .redes img{
-      width: 7%;
-      margin-right: 5%;
+      width: 12%;
+      margin-right: 10%;
       vertical-align: middle;}
   
   .social{
       margin: 5% auto;
-      position: relative;
-      left: 25%;
+      width: 60%;
+      font-size: 4.7vw;
+    }
 
-  }
   .social a:hover{color: tomato;}
   
 }
@@ -484,7 +482,6 @@ h2 {
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: 200px 200px;
-        column-gap: 10px;
         padding-top: 20px;
         padding-bottom: 20px;
         background-image: url(../img/fondo-vestidos.png);
@@ -619,7 +616,6 @@ h2 {
         font-size: 16px;
         font-weight: 700;
         color: #000;
-        font-family: 'Princess Sofia', cursive;
     }
     .princess-subtitle{
         margin: 0;
