@@ -84,10 +84,9 @@ p {
     border: none;
     text-align: left;
     outline: none;
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 10px;
     transition: .3s;
-    font-family: 'Princess Sofia', cursive;
 }
 
 .active, .collapsible:hover {
@@ -324,7 +323,6 @@ p {
         font-size: 16px;
         font-weight: 700;
         color: #000;
-        font-family: 'Princess Sofia', cursive;
     }
     .princess-subtitle{
         margin: 0;
@@ -395,13 +393,14 @@ h2 {
   }
   
   .redes img{
-      width: 15%;
-      margin-right: 10%;
+      width: 7%;
+      margin-right: 5%;
       vertical-align: middle;}
   
   .social{
       margin: 5% auto;
-      width:50%;
+      position: relative;
+      left: 25%;
 
   }
   .social a:hover{color: tomato;}
@@ -618,7 +617,6 @@ h2 {
         font-size: 16px;
         font-weight: 700;
         color: #000;
-        font-family: 'Princess Sofia', cursive;
     }
     .princess-subtitle{
         margin: 0;
